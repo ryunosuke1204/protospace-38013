@@ -1,8 +1,10 @@
 <div class="main">
   <div class="inner">
     <div class="form__wrapper">
+      <% if user_signed_in? && current_user.id == @prototype.user_id %>
       <h2 class="page-heading">プロトタイプ編集</h2>
       <%= render partial: "form", local: { prototype: @prototype } %>
+      <% end %>
     </div>
   </div>
 </div>

@@ -9,5 +9,4 @@ class User < ApplicationRecord
 
 has_many :prototype
 has_many :comments
-has_many :tweets
 end

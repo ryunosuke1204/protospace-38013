@@ -1,8 +1,7 @@
 <main class="main">
   <div class="inner">
       <div class="greeting">
-        <%= "こんにちは、" %>
-        <%= link_to current_user.name, user_path(current_user.id), class: :greeting__link%>
+        <%= "こんにちは、" %><%#= link_to current_user.name, user_path(current_user.id), class: :greeting__link%><%= "さん" %>
       </div>
     <%# // ログインしているときは上記を表示する %>
     <div class="card__wrapper">
